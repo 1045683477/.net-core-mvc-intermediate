@@ -1,0 +1,20 @@
+﻿@model TutorialStudy.Views.ViewModel.HomeIndexViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>学生信息主页</title>
+</head>
+<body>
+<h1>Student</h1>
+<ul>
+    @foreach (var s in Model.Students)
+    {
+        <li>
+            @s.Name (@s.Age)
+        </li>
+    }
+</ul>
+</body>
+</html>
