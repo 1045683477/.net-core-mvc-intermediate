@@ -1,0 +1,17 @@
+﻿@model  TutorialStudy.Model.Student
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@Model.FirstName@Model.LastName 信息</title>
+</head>
+<body>
+<h1>@Model.Id</h1>
+<h1>@Model.FirstName</h1>
+<h1>@Model.LastName</h1>
+<h1>@Model.Gender</h1>
+<h1>@Model.BirthDate</h1>
+<a asp-action="Index">返回主界面</a>
+</body>
+</html>

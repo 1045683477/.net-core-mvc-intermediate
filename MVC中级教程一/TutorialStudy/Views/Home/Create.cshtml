@@ -1,0 +1,20 @@
+﻿@using TutorialStudy.Model
+@model TutorialStudy.Views.ViewModel.StudentCreateViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>添加学生</title>
+</head>
+<body>
+<form method="post">
+    <h1>创建一个学生</h1>
+    <input asp-for="FirstName"/>
+    <input asp-for="LastName"/>
+    <input asp-for="BirthDate" type="date"/>
+    <select asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+    <button type="submit">添加</button>
+</form>
+</body>
+</html>
